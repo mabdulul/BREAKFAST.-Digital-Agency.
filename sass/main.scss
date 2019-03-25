@@ -37,6 +37,7 @@ body {
     font-size: 1.5rem;
     background-color: $color-black;
     font-family: 'Montserrat', sans-serif;
+    overflow-x: hidden;
 }
 
 
@@ -116,6 +117,7 @@ body {
     right: 0%;
     background-color: $color-black;
     overflow: hidden;
+    z-index: 1;
     ul {
         margin: 0;
         padding: 0;
@@ -190,5 +192,53 @@ body {
                 text-decoration: none;
             }
         }
+    }
+}
+
+
+/**** Header Image and Text ********/
+
+.header-image {
+    background: url("../../Images/office.jpg") no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    padding-top: 12rem;
+    padding-bottom: 12rem;
+}
+
+.header_text {
+    display: block;
+    color: $color-offwhite;
+    text-transform: uppercase;
+    position: relative;
+    p {
+        font-size: 1rem;
+        font-weight: 200;
+        letter-spacing: .15rem;
+    }
+    .hr_white {
+        width: 4rem;
+        float: left;
+        display: inline;
+        margin-top: .8rem;
+    }
+    h1 {
+        font-size: 4.5rem;
+    }
+    span {
+        margin-left: 2rem;
+    }
+    .header_text_two {
+        margin-top: 2rem;
+        margin-bottom: 4rem;
+    }
+    a {
+        text-decoration: none;
+        border-width: .1rem;
+        border-style: solid;
+        color: $color-offwhite;
+        padding: 1rem;
     }
 }

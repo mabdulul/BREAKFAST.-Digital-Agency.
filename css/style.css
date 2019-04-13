@@ -435,7 +435,7 @@ body {
   padding-bottom: 20rem; }
 
 .ourWork_box {
-  display: flex;
+  display: grid;
   justify-content: center;
   flex-wrap: wrap; }
 

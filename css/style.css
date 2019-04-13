@@ -1,6 +1,8 @@
 @import url("https://fonts.googleapis.com/css?family=Montserrat:100,200,300,400,400i,500,600,700,800,900");
 /************ Variables ***********/
 /************ Mixiins ***********/
+/************ Buttons ***********/
+/************ Buttons ***********/
 .img-fluid {
   max-width: 100%;
   display: block;
@@ -162,14 +164,15 @@ body {
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
-  padding-top: 12rem;
   padding-bottom: 12rem; }
 
 .header_text {
   display: block;
   color: #F6F6F6;
   text-transform: uppercase;
-  position: relative; }
+  position: relative;
+  margin-top: 9rem;
+  margin-bottom: 3rem; }
   .header_text p {
     font-size: 1rem;
     font-weight: 200;
@@ -186,12 +189,22 @@ body {
   .header_text .header_text_two {
     margin-top: 2rem;
     margin-bottom: 4rem; }
-  .header_text a {
+  .header_text a:link,
+  .header_text a:visited {
     text-decoration: none;
     border-width: .1rem;
     border-style: solid;
+    padding: 1rem;
+    text-transform: uppercase;
     color: #F6F6F6;
-    padding: 1rem; }
+    margin-top: 3rem;
+    margin-bottom: 3rem; }
+  .header_text a:hover {
+    background-color: #0B0D0C;
+    color: #F6F6F6;
+    box-shadow: 0 1rem 2rem rgba(11, 13, 12, 0.15);
+    transform: translateY(-2px);
+    border: none; }
 
 /***** WHO WE ARE ***/
 .whoweare {
@@ -201,15 +214,15 @@ body {
     display: block;
     margin-left: 1.5rem; }
   .whoweare h2 {
-    margin-top: 4rem;
-    margin-bottom: 2.5rem;
+    margin-top: 3rem;
+    margin-bottom: 1rem;
     font-size: 2.5rem; }
   .whoweare p {
     letter-spacing: .05rem;
     line-height: 1.5;
     font-size: 1.6rem;
     text-align: left;
-    margin-bottom: 3rem; }
+    margin-bottom: 2rem; }
   .whoweare_box {
     background-color: #fff;
     max-width: 100%;
@@ -248,38 +261,260 @@ body {
   margin-left: 5rem;
   margin-bottom: 2rem; }
 
+/*************************************************************************HR TAP ******************************************************/
+.our-fields_tap {
+  color: #F6F6F6;
+  text-transform: uppercase;
+  margin-top: 3rem;
+  font-weight: 100;
+  float: right; }
+  .our-fields_tap hr {
+    border-bottom: 1rem;
+    border-color: #F6F6F6;
+    display: inline-block;
+    width: 7rem;
+    vertical-align: middle;
+    margin-left: 25px; }
+
+/***Our Feild***/
+.our-fields {
+  color: #F6F6F6;
+  margin-top: 7rem;
+  font-weight: 100; }
+  .our-fields_hr {
+    max-width: 95%;
+    margin: 0 auto;
+    border-bottom: .5rem;
+    border-color: #F6F6F6;
+    margin-bottom: 1.5rem;
+    margin-top: 1.5rem; }
+  .our-fields_icon {
+    font-size: 5rem; }
+  .our-fields-boxes {
+    margin-top: 2.5rem;
+    margin-bottom: 2.5rem; }
+  .our-fields span {
+    font-size: 2.2rem;
+    top: -20px;
+    display: inline-block;
+    position: relative;
+    margin-left: 1.3rem;
+    text-transform: capitalize; }
+  .our-fields p {
+    line-height: 1.6;
+    letter-spacing: 1.5;
+    word-spacing: .3rem;
+    margin-top: 1.5rem; }
+  .our-fields_btn:link, .our-fields_btn:visited {
+    text-decoration: none;
+    border-width: .1rem;
+    border-style: solid;
+    padding: 1rem;
+    text-transform: uppercase;
+    background-color: #F6F6F6;
+    color: #0B0D0C;
+    font-weight: 500;
+    max-width: 100%;
+    width: 100%;
+    text-align: center;
+    display: table;
+    margin-top: 3rem;
+    margin-bottom: 3rem; }
+  .our-fields_btn:hover {
+    text-decoration: line-through; }
+
+/****************************************************************** Prices ***********************************************************/
+.prices {
+  color: #0B0D0C;
+  background: url("../../Images/office.jpg") no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  position: relative; }
+  .prices .price-bring-box {
+    position: relative;
+    top: 5rem; }
+  .prices_tap {
+    color: #F6F6F6;
+    text-transform: uppercase;
+    margin-top: 3rem;
+    font-weight: 100;
+    float: left; }
+  .prices_hrsmall {
+    border-bottom: 1rem;
+    border-color: #F6F6F6;
+    display: inline-block;
+    width: 7rem;
+    vertical-align: middle;
+    margin-left: 25px;
+    text-transform: uppercase;
+    color: #F6F6F6; }
+  .prices_white {
+    color: #0B0D0C;
+    background-color: #fff;
+    text-align: center;
+    text-transform: uppercase;
+    width: 85%;
+    position: relative;
+    top: 5rem;
+    padding-right: 3rem;
+    padding-left: 3rem;
+    padding-top: 3rem;
+    padding-bottom: 4rem; }
+  .prices h3 {
+    font-size: 2rem;
+    font-weight: 400;
+    margin-top: 3rem;
+    margin-bottom: 1rem; }
+  .prices_from {
+    font-size: 1rem; }
+  .prices_price {
+    font-size: 3rem;
+    margin-top: 2.5rem;
+    margin-bottom: 2.5rem; }
+  .prices a {
+    text-decoration: none;
+    border-width: .1rem;
+    border-style: solid;
+    padding: 1rem;
+    text-transform: uppercase;
+    color: #0B0D0C;
+    max-width: 100%;
+    display: inline-block;
+    width: 15rem; }
+  .prices_touch {
+    text-align: left;
+    text-transform: none;
+    font-size: 1.2rem;
+    position: relative;
+    top: -40px;
+    margin-bottom: 1rem;
+    color: #0B0D0C;
+    background-color: #fff; }
+
+.btn_order-touch {
+  font-size: 1.5rem;
+  position: relative;
+  text-align: center;
+  top: -40px;
+  margin-bottom: 1rem; }
+
+.prices_fix {
+  padding-bottom: 0rem; }
+
+.price_hr {
+  position: relative;
+  top: -2px;
+  margin-bottom: 0px; }
+
+.test {
+  position: relative;
+  top: 10px; }
+
+.test2 {
+  position: relative;
+  top: 5px; }
+
+/*****************************Our work*********************************************************************************/
+.ourWork {
+  background-color: #F6F6F6; }
+
+.ourWork_left {
+  float: left; }
+
+.ourWork_container {
+  top: 10rem;
+  position: relative;
+  width: 85%;
+  padding-bottom: 20rem; }
+
+.ourWork_box {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap; }
+
+/*************************************Footer*********************************************************************************/
+.footer {
+  position: relative;
+  padding-top: 3rem; }
+  .footer_box {
+    background-color: #0B0D0C;
+    color: #F6F6F6;
+    width: 85%; }
+  .footer_google {
+    font-size: 1.5rem;
+    font-weight: 200; }
+    .footer_google h3 {
+      text-transform: uppercase;
+      font-size: 3rem; }
+  .footer_title {
+    padding-bottom: 5rem;
+    font-weight: 800;
+    font-size: 1.5rem; }
+  .footer_list {
+    list-style-type: none;
+    color: #F6F6F6;
+    font-weight: 200; }
+  .footer li {
+    padding-top: 0.6rem;
+    padding-bottom: 0.6rem; }
+
+/*********************************Media Quries*******************************************************************************************************/
 @media (min-width: 720px) {
   html {
     font-size: 60%; }
   .whoweare h2 {
-    margin-bottom: 4rem; }
+    margin-bottom: 2rem;
+    font-size: 3rem; }
+  .whoweare_box {
+    max-width: 100%; }
   .metrics_text {
-    margin-right: 2.5rem;
-    margin-left: 2.5rem;
-    margin-bottom: 2rem; } }
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 2rem; }
+  .our-fields_btn:link, .our-fields_btn:visited {
+    width: 20rem; } }
 
+/***996***/
 @media (min-width: 996px) {
   html {
     font-size: 62.5%; }
   .whoweare_box {
     max-width: 80%; }
   .metrics_text {
-    margin-right: 6rem;
+    margin-right: 9rem;
     margin-left: 6rem;
-    margin-bottom: 2rem; } }
+    margin-bottom: 2rem; }
+  /**our fields**/
+  .our-fields p {
+    line-height: 1.6;
+    letter-spacing: 1.5;
+    word-spacing: .3rem;
+    max-width: 350px; }
+  .our-fields_hr {
+    max-width: 85%; }
+  .our-fields_btn {
+    width: 20rem; } }
 
 @media (min-width: 1024px) {
   .whoweare_box {
-    max-width: 80%; }
+    max-width: 100%; }
+  .whoweare p {
+    margin-bottom: auto; }
+  .whoweare h2 {
+    margin-bottom: 3rem;
+    margin-top: 3rem;
+    font-size: 3rem; }
   .metrics_text {
-    margin-right: 5rem;
-    margin-left: 5rem;
-    margin-bottom: 2rem; } }
+    margin-top: 4rem;
+    margin-bottom: 4rem;
+    font-size: 2rem; }
+  .our-fields_btn {
+    width: 20rem; }
+  .footer_list {
+    float: right; } }
 
 @media (min-width: 1080px) {
   .whoweare_box {
-    max-width: 70%; } }
-
-@media (min-width: 1228px) {
-  .whoweare_box {
-    max-width: 70%; } }
+    max-width: 85%; } }

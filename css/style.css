@@ -420,6 +420,10 @@ body {
 .ourWork {
   background-color: #F6F6F6; }
 
+.pic-test {
+  max-width: 100%;
+  height: auto; }
+
 .ourWork_left {
   float: left; }
 

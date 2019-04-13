@@ -3,6 +3,11 @@
 /************ Mixiins ***********/
 /************ Buttons ***********/
 /************ Buttons ***********/
+.pic-test{
+    max-width: 100%; 
+    height: auto;
+   display: block;
+}
 .img-fluid {
   max-width: 100%;
   display: block;

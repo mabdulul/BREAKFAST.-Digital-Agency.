@@ -430,18 +430,30 @@ body {
     font-weight: 200; }
     .footer_google h3 {
       text-transform: uppercase;
-      font-size: 3rem; }
+      font-size: 3.5rem; }
   .footer_title {
-    padding-bottom: 5rem;
+    margin-bottom: 2rem;
     font-weight: 800;
-    font-size: 1.5rem; }
+    font-size: 2.5rem; }
   .footer_list {
     list-style-type: none;
     color: #F6F6F6;
-    font-weight: 200; }
+    font-weight: 200;
+    padding-top: 3rem;
+    margin-top: 2.5rem; }
+  .footer_location {
+    margin-top: 2.5rem;
+    margin-bottom: 1.5rem;
+    display: flex;
+    line-height: 2;
+    font-size: 1.8rem; }
+    .footer_location div {
+      margin-left: 2rem; }
+    .footer_location span {
+      display: flex; }
   .footer li {
-    padding-top: 0.6rem;
-    padding-bottom: 0.6rem; }
+    padding-top: 1rem;
+    padding-bottom: 1rem; }
 
 /*****************************Our work*********************************************************************************/
 .ourWork {

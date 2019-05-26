@@ -635,24 +635,44 @@ p{
   
       h3 {
         text-transform: uppercase;
-        font-size: 3rem;
+        font-size: 3.5rem;
       }
     }
     &_title {
-      padding-bottom: 5rem;
+        margin-bottom: 2rem;
       font-weight: 800;
-      font-size: 1.5rem;
+      font-size: 2.5rem;
+      
     }
     &_list {
       list-style-type: none;
       color: $color-offwhite;
       font-weight: 200;
+      padding-top: 3rem;
+      margin-top: 2.5rem;
+    }
+    &_location{
+        margin-top: 2.5rem;
+        margin-bottom: 1.5rem;
+        display: flex;
+        line-height: 2;
+        font-size: 1.8rem;
+
+        div{
+            margin-left: 2rem;
+        }
+
+        span{
+            display: flex;
+        
+        }
     }
   
     li {
-      padding-top: 0.6rem;
-      padding-bottom: 0.6rem;
+      padding-top: 1rem;
+      padding-bottom: 1rem;
     }
+
   }
 
 /*****************************Our work*********************************************************************************/
@@ -696,6 +716,9 @@ p{
     display: block;
     height: auto;
 }
+
+
+
 /*********************************Media Quries*******************************************************************************************************/
 
 @media (min-width: 720px) {

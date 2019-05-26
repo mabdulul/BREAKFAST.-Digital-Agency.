@@ -194,6 +194,7 @@ body {
     text-decoration: none;
     border-width: .1rem;
     border-style: solid;
+    text-align: center;
     padding: 1rem;
     text-transform: uppercase;
     color: #F6F6F6;
@@ -309,6 +310,7 @@ body {
     text-decoration: none;
     border-width: .1rem;
     border-style: solid;
+    text-align: center;
     padding: 1rem;
     text-transform: uppercase;
     background-color: #F6F6F6;
@@ -357,13 +359,13 @@ body {
     text-transform: uppercase;
     width: 85%;
     position: relative;
-    top: 5rem;
-    padding-right: 3rem;
-    padding-left: 3rem;
+    top: 3rem;
+    padding-right: .8rem;
+    padding-left: .8rem;
     padding-top: 3rem;
     padding-bottom: 4rem; }
   .prices h3 {
-    font-size: 2rem;
+    font-size: 1.9rem;
     font-weight: 400;
     margin-top: 3rem;
     margin-bottom: 1rem; }
@@ -377,6 +379,7 @@ body {
     text-decoration: none;
     border-width: .1rem;
     border-style: solid;
+    text-align: center;
     padding: 1rem;
     text-transform: uppercase;
     color: #0B0D0C;
@@ -392,6 +395,12 @@ body {
     margin-bottom: 1rem;
     color: #0B0D0C;
     background-color: #fff; }
+  .prices_fix {
+    padding-bottom: 0rem; }
+  .prices_hr {
+    position: relative;
+    top: -2px;
+    margin-bottom: 0px; }
 
 .btn_order-touch {
   font-size: 1.5rem;
@@ -400,43 +409,13 @@ body {
   top: -40px;
   margin-bottom: 1rem; }
 
-.prices_fix {
-  padding-bottom: 0rem; }
-
-.price_hr {
-  position: relative;
-  top: -2px;
-  margin-bottom: 0px; }
-
-.test {
+.moveup-one {
   position: relative;
   top: 10px; }
 
-.test2 {
+.moveup-two {
   position: relative;
   top: 5px; }
-
-/*****************************Our work*********************************************************************************/
-.ourWork {
-  background-color: #F6F6F6; }
-
-.pic-test {
-  max-width: 100%;
-  height: auto; }
-
-.ourWork_left {
-  float: left; }
-
-.ourWork_container {
-  top: 10rem;
-  position: relative;
-  width: 85%;
-  padding-bottom: 20rem; }
-
-.ourWork_box {
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap; }
 
 /*************************************Footer*********************************************************************************/
 .footer {
@@ -464,6 +443,40 @@ body {
     padding-top: 0.6rem;
     padding-bottom: 0.6rem; }
 
+/*****************************Our work*********************************************************************************/
+.ourWork {
+  background-color: #F6F6F6;
+  padding-left: 5rem;
+  padding-right: 5rem; }
+  .ourWork_container {
+    top: 10rem;
+    position: relative;
+    padding-bottom: 20rem; }
+  .ourWork_box {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    max-width: 90%; }
+  .ourWork a {
+    text-decoration: none;
+    border-width: .1rem;
+    border-style: solid;
+    text-align: center;
+    padding: 1rem;
+    text-transform: uppercase;
+    color: #0B0D0C;
+    max-width: 100%;
+    display: inline-block;
+    width: 15rem;
+    float: right;
+    margin-top: 4rem;
+    width: 20rem; }
+
+.pic-test {
+  max-width: 100%;
+  display: block;
+  height: auto; }
+
 /*********************************Media Quries*******************************************************************************************************/
 @media (min-width: 720px) {
   html {
@@ -478,7 +491,11 @@ body {
     margin-left: auto;
     margin-bottom: 2rem; }
   .our-fields_btn:link, .our-fields_btn:visited {
-    width: 20rem; } }
+    width: 20rem; }
+  .ourWork_box {
+    width: 85%; }
+  .ourWork_left {
+    float: left; } }
 
 /***996***/
 @media (min-width: 996px) {
@@ -499,7 +516,13 @@ body {
   .our-fields_hr {
     max-width: 85%; }
   .our-fields_btn {
-    width: 20rem; } }
+    width: 20rem; }
+  .ourWork {
+    background-color: #F6F6F6; }
+    .ourWork_box {
+      width: 85%; }
+    .ourWork_left {
+      float: left; } }
 
 @media (min-width: 1024px) {
   .whoweare_box {
@@ -517,8 +540,15 @@ body {
   .our-fields_btn {
     width: 20rem; }
   .footer_list {
-    float: right; } }
+    float: right; }
+  .ourWork .ourwork_left {
+    flex: 1; }
+  .ourWork .ourwork_left-two {
+    height: fit-content;
+    box-sizing: content-box; } }
 
 @media (min-width: 1080px) {
   .whoweare_box {
-    max-width: 85%; } }
+    max-width: 85%; }
+  .ourWork .ourwork_left {
+    flex: none; } }

@@ -25,11 +25,20 @@ $H2: 2.5rem;
        text-decoration: none;
         border-width: .1rem;
         border-style: solid;
+        text-align: center;
        
         padding: 1rem;
         text-transform: uppercase;
         
 } 
+
+@mixin btn_style-white{
+    color: $color-black;
+    max-width: 100%;
+    display: inline-block;
+    width: 15rem;
+
+}
 @mixin hr_tap {
     border-bottom: 1rem;
     border-color: #F6F6F6;
@@ -532,16 +541,16 @@ p{
         text-transform: uppercase;
         width: 85%;
         position: relative;
-        top: 5rem;
-        padding-right: 3rem;
-        padding-left: 3rem;
+        top: 3rem;
+        padding-right: .8rem;
+        padding-left: .8rem;
         padding-top:3rem;
         padding-bottom: 4rem;
         
 
     }
     h3{
-        font-size: 2rem;
+        font-size: 1.9rem;
         font-weight: 400;
         margin-top: 3rem;
         margin-bottom: 1rem;
@@ -559,10 +568,7 @@ p{
     }
   a{
       @include btn_style;
-      color: $color-black;
-      max-width: 100%;
-      display: inline-block;
-      width: 15rem;
+      @include btn_style-white;
 
 }
 &_touch{
@@ -574,8 +580,22 @@ p{
     margin-bottom: 1rem;
     color: $color-black;
     background-color: $color-white;
+
+}
+
+&_fix{
+
+    padding-bottom: 0rem;
+
+}
+&_hr{
+    position: relative;
+    top: -2px;
+    margin-bottom: 0px;
 }
 }
+
+
 .btn_order-touch{
     font-size: 1.5rem;
     position: relative;
@@ -586,45 +606,17 @@ p{
    
 }
 
-.prices_fix{
 
-    padding-bottom: 0rem;
-
-}
-.price_hr{
-    position: relative;
-    top: -2px;
-    margin-bottom: 0px;
-}
-.test{
+.moveup-one{
     position: relative;
     top: 10px;
 }
-.test2{
+.moveup-two{
     position: relative;
     top: 5px;
 }
 
-/*****************************Our work*********************************************************************************/
-.ourWork{
-    background-color:$color-offwhite;
-    
-}
-.ourWork_left{
-    float: left;
-}
-.ourWork_container{
-    top: 10rem;
-    position: relative;
-    width: 85%;
-    padding-bottom: 20rem;
-}
-.ourWork_box{
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
 
-}
 /*************************************Footer*********************************************************************************/
 .footer {
     position: relative;
@@ -662,9 +654,48 @@ p{
       padding-bottom: 0.6rem;
     }
   }
-  
 
+/*****************************Our work*********************************************************************************/
+.ourWork{
+    background-color:$color-offwhite;
+    padding-left: 5rem;
+    padding-right: 5rem;
+   
 
+    &_left{
+      
+    }
+
+    &_container{
+        top: 10rem;
+        position: relative;
+        padding-bottom: 20rem;
+    }
+
+    &_box{
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        max-width: 90%;
+    
+    }
+   
+    a{
+        @include btn_style;
+        @include btn_style-white;
+        float: right;
+        margin-top: 4rem;
+        width: 20rem;
+       
+       
+    }
+    
+}
+.pic-test{
+    max-width: 100%;
+    display: block;
+    height: auto;
+}
 /*********************************Media Quries*******************************************************************************************************/
 
 @media (min-width: 720px) {
@@ -694,6 +725,20 @@ p{
             width: 20rem;
            
         }
+    }
+    .ourWork{
+        
+        
+        &_box{
+            width: 85%;
+        
+        }
+    
+        &_left{
+            float: left;
+        }
+    
+      
     }
   }
   
@@ -734,6 +779,21 @@ p{
         }
         
     }
+    .ourWork{
+        background-color:$color-offwhite;
+        
+        &_box{
+            width: 85%;
+        
+        }
+    
+        &_left{
+            float: left;
+        }
+    
+      
+    }
+    
   }
   
   @media (min-width: 1024px) {
@@ -772,13 +832,40 @@ p{
             float: right;
           }
     }
+    .ourWork{
+        
+        .ourwork_left{
+            flex: 1;
+
+        }
+        .ourwork_left-two{
+            height: fit-content;
+            box-sizing: content-box;
+        }
+    
+       
+      
+    }
+    
   }
+
+ 
   
   @media (min-width: 1080px) {
     .whoweare {
       &_box {
         max-width: 85%;
       }
+    }
+    .ourWork{
+        
+        .ourwork_left{
+            flex: none;
+
+        }
+      
+      
+      
     }
    
   }

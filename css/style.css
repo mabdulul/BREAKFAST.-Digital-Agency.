@@ -357,7 +357,6 @@ body {
     background-color: #fff;
     text-align: center;
     text-transform: uppercase;
-    width: 85%;
     position: relative;
     top: 3rem;
     padding-right: .8rem;
@@ -507,7 +506,9 @@ body {
   .ourWork_box {
     width: 85%; }
   .ourWork_left {
-    float: left; } }
+    float: left; }
+  .prices_white {
+    text-transform: capitalize; } }
 
 /***996***/
 @media (min-width: 996px) {
@@ -563,4 +564,7 @@ body {
   .whoweare_box {
     max-width: 85%; }
   .ourWork .ourwork_left {
-    flex: none; } }
+    flex: none; }
+  .prices_white {
+    width: 85%;
+    text-transform: uppercase; } }
